@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tabel</title>
+</head>
+<body>
+    <h1>Belajar Tabel</h1>
+    <table style="border: 1px solid black;">
+        <colgroup>
+            <col span="2" style="background-color: green;">
+            <col style="background-color: aqua;">
+        </colgroup>
+        <thead>
+            <tr>
+                <!-- <th>Nama Depan</th>
+                <th>Nama Belakang</th> -->
+                <th colspan="2">Nama</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dwi</td>
+                <td>Sakti</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Moko</td>
+                <td>Purbo</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" style="text-align: center;">Total</td>
+                <td>140</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">Rata-Rata</td>
+                <td>70</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
