@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator in</title>
+</head>
+<body>
+    <script>
+        // in hanya digunakan untuk pengecekan property/key saja tidak memperdulikan value
+        const person = {
+            firstName: "Dwi",
+            lastName: "Sakti",
+        }
+
+        if ("firstName" in person) {
+            alert(`Hello ${person.firstName}!`);
+        } else {
+            alert("hello");
+        }
+    </script>
+</body>
+</html>
