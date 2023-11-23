@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With statement</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName: "dwi",
+            middleName: "atmoko",
+            lastName: "sakti"
+        };
+
+        // console.log(person.firstName)
+        // console.log(person.middleName)
+        // console.log(person.lastName)
+
+        with (person) {
+            console.log(firstName)
+            console.log(middleName)
+            console.log(lastName)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function generator</title>
+</head>
+<body>
+    <script>
+        // generator mirip array, namun bukan array
+        function* createNames(){
+            yield "dwi";
+            yield "atmoko";
+            yield "sakti";
+        }
+
+        console.info(createNames());
+
+        const names = createNames();
+        console.info(names[0]); // undefined, generator cuma bisa diiterasi, tidak bisa diakses dgn index
+        for (const name of names) {
+            console.info(name);
+        }
+
+        // lazy
+        function* buatGanjil(value) {
+            for (let i = 1; i<=value;i++){
+                if (i%2===1) {
+                    yield i;
+                }
+            }
+        }
+
+        // eager
+        function buatGanjilArray(value) {
+            const result = [];
+            for (let i = 1; i<=value;i++){
+                if (i%2===1) {
+                    result.push(i);
+                }
+            }
+        }
+
+        const angkaGanjil = buatGanjil(100);
+        // for (const angka of angkaGanjil) {
+        //     console.info(angka);
+        // }
+            console.info(angkaGanjil.next().value);
+            console.info(angkaGanjil.next().value);
+            console.info(angkaGanjil.next().value);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow function</title>
+</head>
+<body>
+    <script>
+        // const sayHello = (name) => {
+        //     const say = `Hello ${name}`;
+        //     console.info(say);
+        // }
+
+        // const sayHello = (name) => console.info(`Hello ${name}`);
+
+        // jika hanya 1 parameter
+        const sayHello = name => console.info(`Hello ${name}`);
+
+        // tanpa parameter
+        // const sayHello = () => console.info(`Hello`);
+
+
+        const sum = (first, second) => first + second;
+
+        sayHello("moko");
+        console.info(sum(100,100));
+
+        function giveMeNambe(callback){
+            callback("sakti");
+        }
+
+        giveMeNambe(name => console.info(`Hello ${name}`));
+    </script>
+</body>
+</html>

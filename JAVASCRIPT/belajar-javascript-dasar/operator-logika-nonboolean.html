@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nonboolean</title>
+</head>
+<body>
+    <script>
+        // case OR ||
+        // mendulukan truthy
+        // case truthy, mengambil truthy yg pertama
+        // case falsey, mengambil falsey yg terakhir
+
+        // case AND &&
+        // kebalikan dari case OR
+        // mendulukan falsey
+        // case falsey, mengambil falsey pertama
+        console.info("hello" || "");
+        console.info("" || []);
+        console.info("0" || "nol");
+        console.info(null || "null");
+        console.info(undefined || "undefined");
+        console.info(0 || false);
+    </script>
+</body>
+</html>

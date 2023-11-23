@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    <script>
+        let person = {
+            nama: "dwi",
+            alamat: {
+                kota: "bangil",
+                provinsi: "jawa timur",
+                country: "indonesia"
+            },
+            hobi: "coding",
+        };
+
+        // let country = person.alamat.country;
+        let country = person?.alamat?.country;
+
+        document.writeln(`<p>${country}</p>`);
+
+        console.log(person.alamat.provinsi);
+    </script>
+</body>
+</html>
