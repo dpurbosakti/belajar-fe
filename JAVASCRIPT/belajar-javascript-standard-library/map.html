@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+
+        const map = new Map();
+        map.set("name", "moko");
+        map.set("address", "bangil");
+
+        console.info(map);
+        console.info(map.get("name"));
+        console.info(map.get("address"));
+        console.info(map.get("test"));
+
+        for (const element of map) {
+            console.info(`${element[0]} : ${element[1]}`);
+        }
+
+        map.forEach((value, key) => console.info(`${key}: ${value}`));
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+
+    {
+        const person = {
+            firstName: "moko",
+            lastName: "sakti"
+        };
+
+        Object.freeze(person); // tidak bisa dirubah dan dihapus
+        // Object.seal(person); // tidak bisa dihapus, bisa dirubah
+
+        person.firstName = "budi"; // tidak berubah
+        delete person.lastName; // tidak berubah
+
+        console.info(person);
+    }
+
+    {
+        // object assign
+        const target = {
+            firstName: "moko"
+        };
+
+        const source = {
+            lastName: "sakti"
+        };
+
+        Object.assign(target, source);
+        console.info(target);
+        console.info(source);
+    }
+
+    {
+        // object property name and value
+
+        const person = {
+            firstName: "moko",
+            lastName: "sakti"
+        };
+
+        console.info(Object.values(person));
+        console.info(Object.getOwnPropertyNames(person));
+    }
+
+    </script>
+</body>
+</html>

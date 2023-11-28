@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encode</title>
+</head>
+<body>
+    <script>
+
+        {
+            // encode uri dan decode uri
+
+            const url = "http://contoh.com/?name=Moko Dwi Sakti";
+            console.info(url);
+
+            const encoded = encodeURI(url);
+            console.info(encoded);
+
+            const decoded = decodeURI(encoded);
+            console.info(decoded);
+        }
+
+        {
+            // encode uri component dan decode uri component
+            const value = "Moko&Purbo=Sakti";
+            const url = "http://www.contoh.com/?name=";
+
+            const encoded = encodeURIComponent(value);
+            console.info(encoded);
+
+            const decoded = decodeURIComponent(encoded);
+            console.info(decoded);
+        }
+
+    </script>
+</body>
+</html>
