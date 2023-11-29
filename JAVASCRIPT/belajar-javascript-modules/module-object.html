@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>module object</title>
+</head>
+<body>
+    <script type="module">
+        import * as Moko from "./scripts/module-object.js"
+
+        console.info(Moko.firstName);
+        console.info(Moko.middleName);
+        console.info(Moko.lastName);
+
+        Moko.hello();
+
+        const person = new Moko.Person();
+        console.info(person);
+    </script>
+</body>
+</html>
